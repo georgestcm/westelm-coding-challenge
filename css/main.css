@@ -12,7 +12,12 @@ div.company-logo img {
   height: 100px;
 }
 
+.addBorder {
+  border: 2px solid black;
+}
+
 div.nav-wrapper nav {
+  width: 97.5%;
   margin: auto;
   text-align: center;
 }
@@ -20,6 +25,7 @@ div.nav-wrapper nav {
 div.nav-wrapper nav ul {
   font-size: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
 div.nav-wrapper nav ul li {
@@ -55,6 +61,10 @@ div.directories p {
   color: gray;
 }
 
+div.directories p b {
+  color: #393c42;
+}
+
 div.directories p span {
   font-weight: bold;
   color: #393c42;
@@ -66,6 +76,7 @@ div.shopping {
 
 div.shopping .item-viwer {
   width: 50%;
+  display: inline-block;
 }
 
 div.shopping .item-viwer .main-viewer {
@@ -98,4 +109,125 @@ div.shopping .item-list img:hover {
   border: 2px solid black;
   transition: 0.5s;
   cursor: pointer;
+}
+
+div.shopping div.item-info {
+  width: 50%;
+  float: right;
+}
+
+div.shopping div.item-info div.Item-intro {
+  width: 94.6%;
+  margin: auto;
+}
+
+div.shopping div.item-info div.Item-intro h2 {
+  margin: 0 0 20px 15px;
+}
+
+div.shopping div.item-info div.Item-intro p {
+  color: #393c42;
+  margin-bottom: 20px;
+}
+
+div.shopping div.item-info div.Item-intro ul {
+  color: #393c42;
+  margin-bottom: 15px;
+}
+
+div.shopping div.item-info div.item-pricing {
+  width: 94.6%;
+  margin: auto;
+}
+
+div.shopping div.item-info div.item-pricing form input {
+  display: block;
+  margin: 10px 0 18px 0;
+}
+
+div.shopping div.item-info div.expanded {
+  width: 94.6%;
+  margin: auto;
+}
+
+div.shopping div.item-info div.expanded a {
+  text-decoration: none;
+  color: #393c42;
+  display: block;
+}
+
+div.shopping div.item-info div.expanded a img {
+  margin-left: 5px;
+}
+
+div.shopping div.item-info div.expanded div.text p {
+  margin: 10px 0 10px 13px;
+  color: #393c42;
+}
+
+div.shopping div.item-info div.expanded-two {
+  width: 94.6%;
+  margin: auto;
+}
+
+div.shopping div.item-info div.expanded-two a {
+  text-decoration: none;
+  color: #393c42;
+  display: block;
+}
+
+div.shopping div.item-info div.expanded-two a img {
+  margin-left: 5px;
+}
+
+div.shopping div.item-info div.expanded-two div.text2 p {
+  margin: 10px 0 10px 13px;
+  color: #393c42;
+}
+
+.cart-modal {
+  display: none;
+  position: absolute;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cart-modal .content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 26%;
+  border-radius: 14px;
+}
+
+.cart-modal .content .Item-title {
+  text-align: center;
+  color: gray !important;
+}
+
+.cart-modal .content .item-img {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-modal .content .item-img img {
+  height: 100px;
+}
+
+.cart-modal .content .closing {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-modal .content .closing button {
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
 }

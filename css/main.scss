@@ -9,14 +9,19 @@ div.company-logo {
     height: 100px;
   }
 }
+.addBorder {
+  border: 2px solid black;
+}
 
 div.nav-wrapper {
   nav {
+    width: 97.5%;
     margin: auto;
     text-align: center;
     ul {
       font-size: 0;
       padding: 0;
+      white-space: nowrap;
       li {
         display: inline;
         padding: 3px 15px 3px 15px;
@@ -46,6 +51,9 @@ div.directories {
   margin-top: 25px;
   p {
     color: gray;
+    b {
+      color: #393c42;
+    }
     span {
       font-weight: bold;
       color: #393c42;
@@ -57,6 +65,7 @@ div.shopping {
   margin-top: 30px;
   .item-viwer {
     width: 50%;
+    display: inline-block;
     .main-viewer {
       width: 94.6%;
       margin: auto;
@@ -85,4 +94,123 @@ div.shopping {
       }
     }
   }
+
+  div.item-info {
+    width: 50%;
+    float: right;
+    div.Item-intro {
+      width: 94.6%;
+    margin: auto;
+      h2 {
+        margin: 0 0 20px 15px;
+
+      }
+      p {
+     color:  #393c42;
+     margin-bottom: 20px;
+      }
+      ul {
+      color:  #393c42;
+      margin-bottom: 15px;
+      }
+    }
+    div.item-pricing {
+      width: 94.6%;
+    margin: auto;
+      form {
+        input {
+          display: block;
+          margin: 10px 0 18px 0;
+        }
+      }
+    }
+
+div.expanded {
+  width: 94.6%;
+    margin: auto;
+  a {
+    text-decoration: none;
+    color: #393c42;
+    img {
+      margin-left: 5px;
+    }
+    display: block;
+}
+
+
+  div.text {
+
+  p {
+    margin: 10px 0 10px 13px;
+    color: #393c42;
+  }
+
+}
+
+}
+
+div.expanded-two {
+  width: 94.6%;
+    margin: auto;
+  a {
+    text-decoration: none;
+    color: #393c42;
+    img {
+      margin-left: 5px;
+    }
+    display: block;
+}
+
+div.text2 {
+
+p {
+  margin: 10px 0 10px 13px;
+  color: #393c42;
+}
+
+}
+
+}
+
+}}
+
+.cart-modal {
+  display: none;
+    position: absolute;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    .content {
+      background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 26%;
+    border-radius: 14px;
+    .Item-title {
+      text-align: center;
+      color: gray !important;
+    }
+    .item-img {
+      margin-top: 9px;
+      margin-bottom: 9px;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 100px;
+      }
+    }
+    .closing {
+      display: flex;
+      justify-content: center;
+      button {
+        border-radius: 5px;
+       background-color: gray;
+       color: white;
+      }
+    }
+    }
 }
